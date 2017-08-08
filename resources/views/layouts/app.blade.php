@@ -11,6 +11,8 @@
     <title>{{ config('app.name', 'laravel') }}</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/font-awesome.min.css') }}" rel='stylesheet' type='text/css'>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -77,6 +79,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.1.0.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>
